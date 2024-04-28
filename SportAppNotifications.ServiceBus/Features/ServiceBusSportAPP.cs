@@ -70,5 +70,6 @@ using Signalrs;
         {
             var recommendation = JsonConvert.DeserializeObject<EventsUsersEventBus>(body);
             await _hubContext.Clients.All.SendAsync($"ReceiveMessage{recommendation.UserId}", JsonConvert.SerializeObject(body));
+            await _hubContext.Clients.All.SendAsync($"ReceiveMessageWeb{recommendation.UserId}", JsonConvert.SerializeObject(body));
         }
     }
