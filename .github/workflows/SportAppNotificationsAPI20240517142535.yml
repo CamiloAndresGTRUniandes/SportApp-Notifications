@@ -1,10 +1,10 @@
-name: Build and deploy .NET Core application to Web App SportAppNotificationsAPI20240430022527
+name: Build and deploy .NET Core application to Web App SportAppNotificationsAPI20240517142535
 on:
   push:
     branches:
     - develop
 env:
-  AZURE_WEBAPP_NAME: SportAppNotificationsAPI20240430022527
+  AZURE_WEBAPP_NAME: SportAppNotificationsAPI20240517142535
   AZURE_WEBAPP_PACKAGE_PATH: SportAppNotifications.API/publish
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 8.0.x
@@ -44,5 +44,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.SportAppNotificationsAPI20240430022527_086C }}
+        publish-profile: ${{ secrets.SportAppNotificationsAPI20240517142535_C159 }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
