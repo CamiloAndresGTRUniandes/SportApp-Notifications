@@ -52,7 +52,8 @@ builder.Services
                 "http://127.0.0.1:3000",
                 "http://localhost:3000",
                 "https://lively-pond-069dcf00f.5.azurestaticapps.net",
-                "https://ashy-rock-0e2b1cb0f.5.azurestaticapps.net"
+                "https://ashy-rock-0e2b1cb0f.5.azurestaticapps.net",
+                "https://jolly-field-00e316f0f.5.azurestaticapps.net"
                 ).AllowAnyMethod().AllowAnyHeader()
                 .AllowCredentials();
         });
