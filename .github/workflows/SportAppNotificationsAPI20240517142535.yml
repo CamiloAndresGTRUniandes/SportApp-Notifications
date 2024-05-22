@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - develop
+    - main
 env:
   AZURE_WEBAPP_NAME: SportAppNotificationsAPI20240517142535
   AZURE_WEBAPP_PACKAGE_PATH: SportAppNotifications.API/publish
